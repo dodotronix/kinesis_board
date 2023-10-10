@@ -1,0 +1,48 @@
+(kicad_sch (version 20230819) (generator eeschema)
+
+  (uuid 06886ccb-17ec-482e-a853-bf4276494c0a)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 35.56 41.91) (size 63.5 87.63) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 106b8080-7c92-4036-9b29-d3ff48894255)
+    (property "Sheetname" "right_fkeys" (at 35.56 41.1984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "right_fkeys.kicad_sch" (at 35.56 130.1246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kinesis_fkeys"
+        (path "/06886ccb-17ec-482e-a853-bf4276494c0a" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 184.15 41.91) (size 66.04 88.9) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d08dcb93-9608-43f8-96f0-931b8e1132a9)
+    (property "Sheetname" "left_fkeys" (at 184.15 41.1984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "left_fkeys.kicad_sch" (at 184.15 131.3946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kinesis_fkeys"
+        (path "/06886ccb-17ec-482e-a853-bf4276494c0a" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
