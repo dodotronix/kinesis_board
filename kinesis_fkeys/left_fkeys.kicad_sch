@@ -1113,7 +1113,7 @@
     (property "Value" "Conn_01x06" (at 200.66 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 200.66 87.63 0)
+    (property "Footprint" "dodo_conn:84953-6" (at 200.66 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 200.66 87.63 0)
