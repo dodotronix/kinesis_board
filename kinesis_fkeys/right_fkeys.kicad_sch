@@ -199,6 +199,73 @@
         )
       )
     )
+    (symbol "Jumper:SolderJumper_2_Open" (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (at 0 2.032 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SolderJumper_2_Open" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Description" "Solder Jumper, 2-pole, open" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "solder jumper SPST" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "SolderJumper*Open*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SolderJumper_2_Open_0_1"
+        (arc (start -0.254 1.016) (mid -1.2655 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start -0.254 1.016) (mid -1.2655 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -0.254 1.016)
+            (xy -0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.254 1.016)
+            (xy 0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2655 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2655 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "SolderJumper_2_Open_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "dodo-buttons:ML1A-11JW" (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "S" (at 0 -7.62 0)
         (effects (font (size 1.27 1.27)) (justify left top))
@@ -359,10 +426,6 @@
     (stroke (width 0) (type default))
     (uuid 1467d724-2214-4433-893c-5e5c28411341)
   )
-  (wire (pts (xy 118.11 76.2) (xy 140.97 76.2))
-    (stroke (width 0) (type default))
-    (uuid 15f3228b-8fbc-4790-af67-fc8c389fb795)
-  )
   (wire (pts (xy 58.42 58.42) (xy 68.58 58.42))
     (stroke (width 0) (type default))
     (uuid 175594b5-5c71-48d9-a9d8-822b0fc67de1)
@@ -382,10 +445,6 @@
   (wire (pts (xy 118.11 29.21) (xy 120.65 29.21))
     (stroke (width 0) (type default))
     (uuid 23683e33-6e65-4d13-9776-915c05cd77b0)
-  )
-  (wire (pts (xy 118.11 99.06) (xy 140.97 99.06))
-    (stroke (width 0) (type default))
-    (uuid 2c09740f-4b0a-4a65-be54-b2e1930e1197)
   )
   (wire (pts (xy 118.11 36.83) (xy 123.19 36.83))
     (stroke (width 0) (type default))
@@ -410,6 +469,10 @@
   (wire (pts (xy 45.72 96.52) (xy 48.26 96.52))
     (stroke (width 0) (type default))
     (uuid 49b0b9d5-c7f5-4b3e-86ed-d10b8ab8b71e)
+  )
+  (wire (pts (xy 135.89 76.2) (xy 144.78 76.2))
+    (stroke (width 0) (type default))
+    (uuid 4c253ce3-1244-417c-a184-dbecc96aa39b)
   )
   (wire (pts (xy 45.72 34.29) (xy 48.26 34.29))
     (stroke (width 0) (type default))
@@ -455,7 +518,7 @@
     (stroke (width 0) (type default))
     (uuid 69dd76c6-bd78-4779-960f-2c5c0f10b757)
   )
-  (wire (pts (xy 130.81 81.28) (xy 140.97 81.28))
+  (wire (pts (xy 130.81 81.28) (xy 144.78 81.28))
     (stroke (width 0) (type default))
     (uuid 6a2841a2-5784-442c-87bd-7e3979e5dafd)
   )
@@ -482,6 +545,10 @@
   (wire (pts (xy 48.26 78.74) (xy 48.26 83.82))
     (stroke (width 0) (type default))
     (uuid 83afc01c-7780-49e0-97a9-951b91c3c701)
+  )
+  (wire (pts (xy 135.89 99.06) (xy 144.78 99.06))
+    (stroke (width 0) (type default))
+    (uuid 83decc61-0634-4716-9de3-1f78e2e9c8c4)
   )
   (wire (pts (xy 130.81 58.42) (xy 140.97 58.42))
     (stroke (width 0) (type default))
@@ -539,6 +606,10 @@
     (stroke (width 0) (type default))
     (uuid b8525bb7-caac-40fb-ac6d-a76c21d70859)
   )
+  (wire (pts (xy 118.11 76.2) (xy 128.27 76.2))
+    (stroke (width 0) (type default))
+    (uuid b919f421-d4b2-4a70-910f-59b7dbdcc38f)
+  )
   (wire (pts (xy 45.72 50.8) (xy 48.26 50.8))
     (stroke (width 0) (type default))
     (uuid bb173515-5874-4b1d-8d1d-01dc33dc08fd)
@@ -575,7 +646,7 @@
     (stroke (width 0) (type default))
     (uuid d3614928-a3b0-4210-9ff6-54b266141931)
   )
-  (wire (pts (xy 130.81 104.14) (xy 140.97 104.14))
+  (wire (pts (xy 130.81 104.14) (xy 144.78 104.14))
     (stroke (width 0) (type default))
     (uuid d56c9447-50c0-4e7e-be01-2f47a24dc9fc)
   )
@@ -610,6 +681,10 @@
   (wire (pts (xy 45.72 118.11) (xy 48.26 118.11))
     (stroke (width 0) (type default))
     (uuid f39e89b3-9803-4f98-9e3c-66b6ab4ee172)
+  )
+  (wire (pts (xy 118.11 99.06) (xy 128.27 99.06))
+    (stroke (width 0) (type default))
+    (uuid f6fa2a4b-cb7b-4381-ab0d-7d0b70e12994)
   )
   (wire (pts (xy 45.72 101.6) (xy 48.26 101.6))
     (stroke (width 0) (type default))
@@ -658,7 +733,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2cc963cb-0207-4cd6-916d-5e4089e03165)
   )
-  (label "ROW_F1" (at 140.97 99.06 180) (fields_autoplaced)
+  (label "ROW_F1" (at 144.78 99.06 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 352be227-50fa-4de4-9195-c851b99c6e05)
   )
@@ -666,7 +741,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 418f6b56-0d9d-4c56-9693-14c7d3c9b410)
   )
-  (label "COL_5" (at 140.97 104.14 180) (fields_autoplaced)
+  (label "COL_5" (at 144.78 104.14 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 448eea26-304c-4704-bd4a-c1e0ab51c5bf)
   )
@@ -746,7 +821,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b0a8a383-1f9d-49ef-bf66-2363c77fbe86)
   )
-  (label "COL_5" (at 140.97 81.28 180) (fields_autoplaced)
+  (label "COL_5" (at 144.78 81.28 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid bf3c7764-5fe0-4d2f-ad5c-89bce3a9bce8)
   )
@@ -758,7 +833,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c48eadd8-4327-4206-9faa-a102dd40ddfb)
   )
-  (label "ROW_F2" (at 140.97 76.2 180) (fields_autoplaced)
+  (label "ROW_F2" (at 144.78 76.2 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid caac63e7-720b-4561-804a-91bcb6a8d8a2)
   )
@@ -798,7 +873,7 @@
   (symbol (lib_id "power:GND") (at 120.65 106.68 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0447b9a0-9455-4839-a43d-a56b91373b54)
-    (property "Reference" "#PWR01" (at 120.65 113.03 0)
+    (property "Reference" "#PWR0108" (at 120.65 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 120.65 111.76 0)
@@ -817,7 +892,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -826,10 +901,39 @@
     )
   )
 
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 132.08 99.06 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 15da2b7e-dd84-4711-9312-619b9b36a931)
+    (property "Reference" "JP2" (at 132.08 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SolderJumper_2_Open" (at 132.08 95.25 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" (at 132.08 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 132.08 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Solder Jumper, 2-pole, open" (at 132.08 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 48d408f9-e01e-415c-99bd-587a28a53082))
+    (pin "1" (uuid 58157716-a646-4aff-8b72-40c4538eea89))
+    (instances
+      (project "kinesis_fkeys"
+        (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
+          (reference "JP2") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 120.65 83.82 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20a939f2-32bd-4f94-891a-8f8c10ff5c04)
-    (property "Reference" "#PWR02" (at 120.65 90.17 0)
+    (property "Reference" "#PWR0109" (at 120.65 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 120.65 88.9 0)
@@ -848,7 +952,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -964,7 +1068,7 @@
   (symbol (lib_id "power:GND") (at 48.26 39.37 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 322ef4eb-2ca2-4b52-a3cc-633b2a8925b9)
-    (property "Reference" "#PWR05" (at 48.26 45.72 0)
+    (property "Reference" "#PWR0103" (at 48.26 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 48.26 44.45 0)
@@ -983,7 +1087,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1019,6 +1123,35 @@
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 132.08 76.2 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 374e37c5-3402-4e85-9ce2-f1c209a67690)
+    (property "Reference" "JP1" (at 132.08 69.85 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SolderJumper_2_Open" (at 132.08 72.39 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" (at 132.08 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 132.08 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Solder Jumper, 2-pole, open" (at 132.08 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 23723dff-f29f-46c0-beb0-3986e15886c0))
+    (pin "1" (uuid eb25c4d0-5e58-46e9-879b-ab9636ad9d76))
+    (instances
+      (project "kinesis_fkeys"
+        (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -1351,7 +1484,7 @@
   (symbol (lib_id "power:GND") (at 48.26 83.82 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ae1fc7d-8cff-4a9f-892b-a4037d443009)
-    (property "Reference" "#PWR07" (at 48.26 90.17 0)
+    (property "Reference" "#PWR0106" (at 48.26 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 48.26 88.9 0)
@@ -1370,7 +1503,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1498,7 +1631,7 @@
   (symbol (lib_id "power:GND") (at 120.65 60.96 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 82e205c5-dd12-4cdc-b212-ad654ed03394)
-    (property "Reference" "#PWR03" (at 120.65 67.31 0)
+    (property "Reference" "#PWR0101" (at 120.65 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 120.65 66.04 0)
@@ -1517,7 +1650,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1529,7 +1662,7 @@
   (symbol (lib_id "power:GND") (at 120.65 39.37 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83c4049c-941a-4a21-b036-8b9906468888)
-    (property "Reference" "#PWR04" (at 120.65 45.72 0)
+    (property "Reference" "#PWR0102" (at 120.65 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 120.65 44.45 0)
@@ -1548,7 +1681,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1612,7 +1745,7 @@
   (symbol (lib_id "power:GND") (at 48.26 106.68 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b291562e-fd79-4817-85a9-cee667fa702d)
-    (property "Reference" "#PWR08" (at 48.26 113.03 0)
+    (property "Reference" "#PWR0105" (at 48.26 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 48.26 111.76 0)
@@ -1631,7 +1764,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1740,7 +1873,7 @@
   (symbol (lib_id "power:GND") (at 48.26 128.27 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ce56adfd-255a-41fb-af3c-72fc8b7418bd)
-    (property "Reference" "#PWR09" (at 48.26 134.62 0)
+    (property "Reference" "#PWR0107" (at 48.26 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 48.26 133.35 0)
@@ -1759,7 +1892,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
@@ -1803,7 +1936,7 @@
   (symbol (lib_id "power:GND") (at 48.26 60.96 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f32c0230-1619-4866-ada2-c9efba0a47cf)
-    (property "Reference" "#PWR06" (at 48.26 67.31 0)
+    (property "Reference" "#PWR0104" (at 48.26 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND_R" (at 48.26 66.04 0)
@@ -1822,7 +1955,7 @@
     (instances
       (project "kinesis_fkeys"
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/106b8080-7c92-4036-9b29-d3ff48894255"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
         (path "/06886ccb-17ec-482e-a853-bf4276494c0a/d08dcb93-9608-43f8-96f0-931b8e1132a9"
           (reference "#PWR?") (unit 1)
